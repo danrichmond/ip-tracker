@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class IPTracker {
 	public WebDriver driver;
-	String driverPath = "./chromedriver";
+	String driverPath = "chromedriver";
 	public String baseUrl = "http://www.ip-tracker.org/";
 	WebElement continent;
 	WebElement country;
@@ -31,7 +31,9 @@ public class IPTracker {
 		  state = driver.findElement(By.xpath("//*[@id=\"maincontent\"]/table/tbody/tr[3]/td[2]/table/tbody/tr[10]/td"));
 		  city = driver.findElement(By.xpath("//*[@id=\"maincontent\"]/table/tbody/tr[3]/td[2]/table/tbody/tr[11]/td"));
 		  coordinates = driver.findElement(By.xpath("//*[@id=\"maincontent\"]/table/tbody/tr[3]/td[2]/table/tbody/tr[26]/td"));
+		  System.out.println("\n-----------------------------");
 		  System.out.println("\n---------- Details ----------");
+		  System.out.println("\n-----------------------------");
 		  System.out.println("Continent: " + continent.getText());
 		  System.out.println("County: " + country.getText());
 		  System.out.println("State: " + state.getText());
