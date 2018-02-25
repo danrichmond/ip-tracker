@@ -1,4 +1,4 @@
-Intended use -----
+I developed this IP tracker to acquire geographical information about a given IP address for use in a larger scale security application. It utilizes Selenium to gather the information from ip-tracker.org.
 
 Getting up and running:
   Clone the repo locally.
