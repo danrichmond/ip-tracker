@@ -5,25 +5,30 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import java.util.*;
 
 public class IPTracker {
 	public WebDriver driver;
 	String driverPath = "chromedriver";
+	Scanner in = new Scanner(System.in);
 	public String baseUrl = "http://www.ip-tracker.org/";
 	WebElement continent;
 	WebElement country;
 	WebElement state;
 	WebElement city;
 	WebElement coordinates;
+	String ipAddr;
 	
   @Test
   public void iPLocation() {
 	  try {
+		  System.out.print("Enter IP Address: ");
+		  ipAddr = in.next();
 		  System.setProperty("webdriver.chrome.driver", driverPath);
 		  driver = new ChromeDriver();
 		  driver.get(baseUrl);
 		  WebElement ipInput = driver.findElement(By.xpath("//*[@id=\"txtOne\"]"));
-		  ipInput.sendKeys("69.252.207.71"); ///// Update IP Here
+		  ipInput.sendKeys(ipAddr);
 		  WebElement enterButton = driver.findElement(By.xpath("//*[@id=\"maincontent\"]/form/table/tbody/tr[2]/td/input"));
 		  enterButton.click();
 		  continent = driver.findElement(By.xpath("//*[@id=\"maincontent\"]/table/tbody/tr[3]/td[2]/table/tbody/tr[7]/td"));
