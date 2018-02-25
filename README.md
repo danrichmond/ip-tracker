@@ -1,6 +1,7 @@
 I developed this IP tracker to acquire geographical information about a given IP address for use in a larger scale security application. It utilizes Selenium to gather information from ip-tracker.org.
 
 Getting it up and running:
+
 Note: The current chromedriver is for Mac. Download your version from http://chromedriver.storage.googleapis.com/index.html?path=2.14/ then replace the one in IPTracker with it.
   1. Clone the repo
   2. Import the repo into Eclipse
