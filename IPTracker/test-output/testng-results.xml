@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10107" started-at="2018-02-25T20:50:30Z" finished-at="2018-02-25T20:50:40Z">
+  <suite name="Default suite" duration-ms="12415" started-at="2018-02-25T20:58:49Z" finished-at="2018-02-25T20:59:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10107" started-at="2018-02-25T20:50:30Z" finished-at="2018-02-25T20:50:40Z">
+    <test name="Default test" duration-ms="12415" started-at="2018-02-25T20:58:49Z" finished-at="2018-02-25T20:59:02Z">
       <class name="iptracker.IPTracker">
-        <test-method status="PASS" signature="iPLocation()[pri:0, instance:iptracker.IPTracker@457e2f02]" name="iPLocation" duration-ms="10084" started-at="2018-02-25T20:50:30Z" finished-at="2018-02-25T20:50:40Z">
+        <test-method status="PASS" signature="iPLocation()[pri:0, instance:iptracker.IPTracker@1593948d]" name="iPLocation" duration-ms="12391" started-at="2018-02-25T20:58:49Z" finished-at="2018-02-25T20:59:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iPLocation -->

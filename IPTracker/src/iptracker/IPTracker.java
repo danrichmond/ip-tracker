@@ -32,8 +32,8 @@ public class IPTracker {
 		  city = driver.findElement(By.xpath("//*[@id=\"maincontent\"]/table/tbody/tr[3]/td[2]/table/tbody/tr[11]/td"));
 		  coordinates = driver.findElement(By.xpath("//*[@id=\"maincontent\"]/table/tbody/tr[3]/td[2]/table/tbody/tr[26]/td"));
 		  System.out.println("\n-----------------------------");
-		  System.out.println("\n---------- Details ----------");
-		  System.out.println("\n-----------------------------");
+		  System.out.println("---------- Details ----------");
+		  System.out.println("-----------------------------");
 		  System.out.println("Continent: " + continent.getText());
 		  System.out.println("County: " + country.getText());
 		  System.out.println("State: " + state.getText());
